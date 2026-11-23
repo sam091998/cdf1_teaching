@@ -196,6 +196,8 @@ def create_solid_staircase(base_point=None, step_count=5, width=5.0, step_depth=
     if width <= 0 or step_depth <= 0 or step_height <= 0:
         raise ValueError("width, step_depth, and step_height must be positive.")
 
+        
+
     front_y = base_point.Y
     bottom_z = base_point.Z
     back_y = front_y + step_count * step_depth
